@@ -45,10 +45,10 @@ Patterns:
 Contributing
 ------------
 
-#. Fork the repository on Github
-#. Create a named feature branch (like `add_component_x`)
-#. Write your change
-#. Submit a Pull Request using Github
+1. Fork the repository on Github
+1. Create a named feature branch (like `add_component_x`)
+1. Write your change
+1. Submit a Pull Request using Github
 
 License and Authors
 -------------------
