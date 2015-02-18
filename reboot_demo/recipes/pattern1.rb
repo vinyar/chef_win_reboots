@@ -1,6 +1,7 @@
 # This pattern will run through the list of recipes and skip the entire recipe is there is a pending reboot.
 # wrapper recipe. This is useful when you need multiple reboots during the chef client run.
 
+#Example:
 # install a role that requires a reboot
 # install a patch that requires a reboot
 # join to domain
