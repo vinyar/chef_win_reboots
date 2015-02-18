@@ -1,5 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+folder1 = '~/Documents/ISO_BOX_etc/binaries'
+
+
 Vagrant.configure("2") do |config|
 
   # config.vm.box = "alex_win2k8"
@@ -8,13 +11,8 @@ Vagrant.configure("2") do |config|
 
   # config.vbguest.auto_update = true # experiment with vagrant-vbguest plugin
 
-
   # config.omnibus.chef_version = :latest
-  # config.vm.synced_folder "../../Alex_personal/password\ safe", "c:/password_safe"
-  config.vm.synced_folder "~/Documents/ISO_BOX_etc/binaries/", "c:/binaries"
-  # config.vm.synced_folder '/Volumes/NIKON D610', "c:/nikon_d610"
-  # config.vm.synced_folder '/Volumes/win8', "c:/win8"
-
+  config.vm.synced_folder folder1, "c:/parent_#{File.basename(folder1)}" if File.exists? File.expand_path(folder1)
 
   # config.vm.guest = :windows
   # New veature in vagrant 1.6. Makes windows much easier.
