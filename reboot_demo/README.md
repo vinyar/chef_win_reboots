@@ -4,8 +4,8 @@ This cookbook shows patterns for handling reboots on Windows.
 These patterns allow for a single continuous chef client run across multiple reboots.
 
 There are a couple of common scenarios for reboots:
-* No reboot pending condition needs to exist in order to install an item/feature.
-* Reboot needs to happen after installation of a component.
+* "No reboot pending" condition needs to exist in order to install an item/feature.
+* Reboot needs to happen after installation of a component(s).
 * Reboot needs to happen at the end of the chef run.
 * Combination of conditions.
 * Join AD as part of the chef client run
@@ -32,7 +32,7 @@ Patterns:
 > Using 'raise' to elegantly end the chef run immediately and reboot.
 > Will still run report handlers at the end.
 > Handlers are skipped if you forcibly terminate the chef run.
-> In this scenario node will not be saved because raise exits the chef run. If state needs to be captured, use node.save.
+> In this scenario node will not be saved because 'raise' exits the chef run. If node state needs to be captured, use node.save.
 
 * Pattern 6 - using reboot resource
 > Introduced in chef-client 12.x.x

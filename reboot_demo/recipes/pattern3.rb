@@ -1,9 +1,9 @@
-# using custom library. 
+# using custom library.
 # For example, if your application has specific requirements.
 # useful for older versions of chef-client before pending_reboot? was implemented.
 
 service 'w3svc' do
-  action [ :start, :enable ]
+  action [:start, :enable]
   not_if reboot_pending_old?
 end
 

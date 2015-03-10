@@ -2,7 +2,7 @@
 
 
 service 'w3svc' do
-  action [ :start, :enable ]
+  action [:start, :enable]
   not_if reboot_pending?
 end
 
@@ -18,8 +18,8 @@ template 'c:/myfolder/myfile.txt' do
 end
 
 
-reboot "app_requires_reboot" do
+reboot 'app_requires_reboot' do
   action :request_reboot
-  reason "Need to reboot when the run completes successfully."
+  reason 'Need to reboot when the run completes successfully.'
   delay_mins 5
 end

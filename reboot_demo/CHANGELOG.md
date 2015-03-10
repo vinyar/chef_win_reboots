@@ -1,11 +1,15 @@
 reboot_demo CHANGELOG
 =====================
 
-This file is used to list changes made in each version of the reboot_demo cookbook.
+0.1.0
+-----
+- [Alex Vinyar] - Fixing small errors and spelling
+
 
 0.1.0
 -----
-- [your_name] - Initial release of reboot_demo
+- [Alex Vinyar] - Initial release of reboot_demo
+First iteration of the 'Reboots on Windows' patterns.
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

@@ -42,11 +42,12 @@ Vagrant.configure("2") do |config|
 
   end
 
-  # config.vm.provision :chef_solo do |chef|
-  #   chef.cookbooks_path = "."
-  #   chef.add_recipe "win_lang_pack"
-  #   chef.log_level = :debug
-  # end
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = "~/Documents/Projects/win_reboots"
+    # chef.add_recipe "pattern7"
+    chef.add_recipe "reboot_demo::pattern7"
+    chef.log_level = :info
+  end
 
 end
 
