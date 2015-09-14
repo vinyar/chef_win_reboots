@@ -11,7 +11,7 @@ There are a couple of common scenarios for reboots:
 * Join AD as part of the chef client run
 
 Patterns:
-* Pattern 1 - Wrapper recipe pattern.
+* Pattern 1 - Rapper recipe pattern.
 > This pattern will run through the list of recipes and skip the entire recipe if there is a pending reboot.
 > This is useful when you need multiple reboots during the chef client run.
 
@@ -28,7 +28,7 @@ Patterns:
 > Using reboot handler from the Windows cookbook.
 > This will cause a reboot at the end of the chef client run.
 
-* Pattern 5 - Immediately rebooting in a middle of chef client run.
+* Pattern 5 - Immediately rebuting in a middle of chef client run.
 > Using 'raise' to elegantly end the chef run immediately and reboot.
 > Will still run report handlers at the end.
 > Handlers are skipped if you forcibly terminate the chef run.
